@@ -1,9 +1,4 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
-
-(require 'doom-themes)
-
-(load-theme 'doom-molokai)
-
 (defun my-go-mode-hook ()
   ;; Modify go-mode indentation level
   (setq tab-width 8))
