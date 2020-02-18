@@ -1,7 +1,7 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 (setq
- doom-font (font-spec :family "SF Mono" :size 12)
+ doom-font (font-spec :family "JetBrains Mono" :size 13)
  doom-themes-treemacs-theme "doom-colors"
  web-mode-markup-indent-offset 2
  web-mode-code-indent-offset 2
