@@ -1,4 +1,7 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
+(use-package! graphql-mode
+  :mode ("\\.gql\\'" "\\.graphql\\'")
+  :config (setq-hook! 'graphql-mode-hook tab-width graphql-indent-level))
 
 (setq
  doom-font (font-spec :family "JetBrains Mono" :size 13)
