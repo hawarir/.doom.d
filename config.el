@@ -4,13 +4,14 @@
   :config (setq-hook! 'graphql-mode-hook tab-width graphql-indent-level))
 
 (setq
+ doom-theme 'doom-tomorrow-night
  doom-font (font-spec :family "JetBrains Mono" :size 13)
  doom-themes-treemacs-theme "doom-colors"
- web-mode-markup-indent-offset 2
- web-mode-code-indent-offset 2
- web-mode-css-indent-offset 2
- js-indent-level 2
- typescript-indent-level 2
- json-reformat:indent-width 2
- css-indent-offset 2
- projectile-project-search-path '("~/code/"))
+ org-priority-highest 65
+ org-priority-lowest  68
+ org-priority-default 66
+ org-superstar-headline-bullets-list '("⁖" "◉" "○" "✸" "✿")
+ projectile-project-search-path '("~/code"))
+
+(after! org-fancy-priorities
+  (setq org-fancy-priorities-list '("⚡" "⬆" "⬇" "☕")))
